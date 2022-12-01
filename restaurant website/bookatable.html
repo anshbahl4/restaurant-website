@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a table</title>
+    <link rel="stylesheet" href="restaurant1.css">
+    <style>
+body{
+    background: url("cuttlery2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    
+}
+   *{
+       box-sizing: border-box;
+   }
+   .container{
+  
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+input [type="text"],
+input [type="email"],
+input [type="number"],
+input [type="password"],
+input [type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+.main_heading{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: salmon;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: -webkit-grabbing;
+    width: 20%;}
+    input[type="submit"]:hover{
+        background-color: darkkhaki;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo2.jpg" alt="" width="250" height="100">
+        <ul>
+           <li><a href="restaurant1.html">Home </a></li> 
+          
+           <li><a href="#">Contact us</a></li>
+           <li><a href="#">Book a Table </a></li>
+           <li><a href="aboutus.html">About US</a></li>
+           
+        </ul>
+    </nav>
+    <div class="container">
+    <form action="booktable.php" method="POST"> 
+        <h1 class="main_heading">Book A Table</h1> <br> <br>
+        <p>Required Fields are followed by *</p> <br>
+        <p>Name: *<input type="text" name="name" Required placeholder="Billu Sanda"></p> <br>
+        <fieldset>
+            <legend>Gender *</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="male" required>
+            </p>
+        </fieldset> <br>
+        <p>Address: <textarea name="address" id="address" cols="80" rows="6"></textarea></p>
+        <p>Email: * <input type="email" name="email" required placeholder="abc@gmail.com"></p> <br>
+        <p>Pincode: <input type="number" name="Pincode" id="pincode" placeholder="203234" ></p> <br>
+        <p>Date *<input type="date" name="Date" id="date" required></p> <br>
+        <input type="submit" name="save" value="Confirm your Booking" >  <br>
+        
+        
+        
+
+
+    </form>
+</div> <br><br>
+<footer>
+    <a href="FAQ.html">FAQ</a>
+    <a href="termsofuse.html">Terms of Use</a>
+    <a href="privacypolicy.html">Privacy Policy</a>
+   <a href="#">&copy; Chowkdi</a>
+    </footer>
+    
+</body>
+</html>

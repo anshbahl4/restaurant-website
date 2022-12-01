@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    background: white;
+}
+.header{
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+       center/cover no-repeat fixed;
+      margin-top: auto;
+}
+nav {
+    background-color: yellowgreen;
+    overflow: hidden;
+    top: 100px;
+    position: top;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.quote{
+    background-color: wheat;
+}
